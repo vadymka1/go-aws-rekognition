@@ -1,0 +1,14 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>{{ .Title}}</title>
+</head>
+<body>
+<h1>{{ .Title}}</h1>
+<p>{{ .Description}}</p>
+<form enctype="multipart/form-data" action="http://localhost:9090/upload" method="post">
+    <input type="file" name="images" multiple/>
+    <input type="submit" value="upload" />
+</form>
+</body>
+</html>
